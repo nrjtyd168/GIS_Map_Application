@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1262</width>
+    <height>713</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_6">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QToolButton" name="Display_Grid">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="tabletTracking">
+           <bool>false</bool>
+          </property>
+          <property name="toolTip">
+           <string>Display Grid</string>
+          </property>
+          <property name="statusTip">
+           <string extracomment="Display Grid">Display Grid</string>
+          </property>
+          <property name="whatsThis">
+           <string extracomment="Display Grid">Display Grid</string>
+          </property>
+          <property name="accessibleName">
+           <string extracomment="Display Grid">Display Grid</string>
+          </property>
+          <property name="accessibleDescription">
+           <string extracomment="Display Grid">Display Grid</string>
+          </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="Resources.qrc">
+            <normaloff>:/res/screenshot.png</normaloff>
+            <selectedoff>:/res/screenshot.png</selectedoff>:/res/screenshot.png</iconset>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="zoomInToolButton">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="mouseTracking">
+           <bool>true</bool>
+          </property>
+          <property name="tabletTracking">
+           <bool>true</bool>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="toolTip">
+           <string>Zoom In</string>
+          </property>
+          <property name="statusTip">
+           <string>Zoom In</string>
+          </property>
+          <property name="whatsThis">
+           <string>Zoom In</string>
+          </property>
+          <property name="accessibleName">
+           <string>Zoom In</string>
+          </property>
+          <property name="accessibleDescription">
+           <string>Zoom In</string>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="Resources.qrc">
+            <normaloff>:/res/plus-16-f.png</normaloff>:/res/plus-16-f.png</iconset>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="zoomOutToolButton">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="mouseTracking">
+           <bool>true</bool>
+          </property>
+          <property name="tabletTracking">
+           <bool>true</bool>
+          </property>
+          <property name="toolTip">
+           <string>Zoom Out</string>
+          </property>
+          <property name="statusTip">
+           <string>Zoom Out</string>
+          </property>
+          <property name="whatsThis">
+           <string>Zoom Out</string>
+          </property>
+          <property name="accessibleName">
+           <string>Zoom Out</string>
+          </property>
+          <property name="accessibleDescription">
+           <string>Zoom Out</string>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="Resources.qrc">
+            <normaloff>:/res/minus-16-f.png</normaloff>:/res/minus-16-f.png</iconset>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="AnnotationToolbar">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="mouseTracking">
+           <bool>true</bool>
+          </property>
+          <property name="tabletTracking">
+           <bool>true</bool>
+          </property>
+          <property name="toolTip">
+           <string>Add Annotations</string>
+          </property>
+          <property name="statusTip">
+           <string>Add Annotations</string>
+          </property>
+          <property name="whatsThis">
+           <string>Add Annotations</string>
+          </property>
+          <property name="accessibleName">
+           <string>Add Annotations</string>
+          </property>
+          <property name="accessibleDescription">
+           <string>Add Annotations</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="Resources.qrc">
+            <normaloff>:/res/point-32.png</normaloff>:/res/point-32.png</iconset>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="WaypointsToolbar">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="mouseTracking">
+           <bool>true</bool>
+          </property>
+          <property name="tabletTracking">
+           <bool>true</bool>
+          </property>
+          <property name="toolTip">
+           <string>Add Waypoints</string>
+          </property>
+          <property name="statusTip">
+           <string>Add Waypoints</string>
+          </property>
+          <property name="whatsThis">
+           <string>Add Waypoints</string>
+          </property>
+          <property name="accessibleName">
+           <string>Add Waypoints</string>
+          </property>
+          <property name="accessibleDescription">
+           <string>Add Waypoints</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="Resources.qrc">
+            <normaloff>:/res/line-32.png</normaloff>:/res/line-32.png</iconset>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="DBPPToolButton">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="mouseTracking">
+           <bool>true</bool>
+          </property>
+          <property name="tabletTracking">
+           <bool>true</bool>
+          </property>
+          <property name="toolTip">
+           <string>Distance Between Platform &amp; Point</string>
+          </property>
+          <property name="statusTip">
+           <string>Distance Between Platform &amp; Point</string>
+          </property>
+          <property name="whatsThis">
+           <string>Distance Between Platform &amp; Point</string>
+          </property>
+          <property name="accessibleName">
+           <string>Distance Between Platform &amp; Point</string>
+          </property>
+          <property name="accessibleDescription">
+           <string>Distance Between Platform &amp; Point</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="Resources.qrc">
+            <normaloff>:/res/RedShinyPin.png</normaloff>:/res/RedShinyPin.png</iconset>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="DBTPToolButton">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="mouseTracking">
+           <bool>true</bool>
+          </property>
+          <property name="tabletTracking">
+           <bool>true</bool>
+          </property>
+          <property name="toolTip">
+           <string>Distance Between Two Points</string>
+          </property>
+          <property name="statusTip">
+           <string>Distance Between Two Points</string>
+          </property>
+          <property name="whatsThis">
+           <string>Distance Between Two Points</string>
+          </property>
+          <property name="accessibleName">
+           <string>Distance Between Two Points</string>
+          </property>
+          <property name="accessibleDescription">
+           <string>Distance Between Two Points</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="Resources.qrc">
+            <normaloff>:/res/orange_symbol.png</normaloff>:/res/orange_symbol.png</iconset>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="DBMEToolButton">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="mouseTracking">
+           <bool>true</bool>
+          </property>
+          <property name="tabletTracking">
+           <bool>true</bool>
+          </property>
+          <property name="toolTip">
+           <string>Distance Between Manual Points</string>
+          </property>
+          <property name="statusTip">
+           <string>Distance Between Manual Points</string>
+          </property>
+          <property name="whatsThis">
+           <string>Distance Between Manual Points</string>
+          </property>
+          <property name="accessibleName">
+           <string>Distance Between Manual Points</string>
+          </property>
+          <property name="accessibleDescription">
+           <string>Distance Between Manual Points</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="Resources.qrc">
+            <normaloff>:/res/ic_menu_legendpopover_light.png</normaloff>:/res/ic_menu_legendpopover_light.png</iconset>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="Reset_to_Default">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="mouseTracking">
+           <bool>true</bool>
+          </property>
+          <property name="tabletTracking">
+           <bool>true</bool>
+          </property>
+          <property name="toolTip">
+           <string>Reset to Default</string>
+          </property>
+          <property name="statusTip">
+           <string>Reset to Default</string>
+          </property>
+          <property name="whatsThis">
+           <string>Reset to Default</string>
+          </property>
+          <property name="accessibleName">
+           <string>Reset to Default</string>
+          </property>
+          <property name="accessibleDescription">
+           <string>Reset to Default</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="Resources.qrc">
+            <normaloff>:/res/undo-32.png</normaloff>:/res/undo-32.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_9">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>140</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QWidget" name="m_widMap" native="true">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>400</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>ArrowCursor</cursorShape>
+            </property>
+            <property name="mouseTracking">
+             <bool>true</bool>
+            </property>
+            <property name="tabletTracking">
+             <bool>true</bool>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="statusTip">
+             <string/>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="accessibleName">
+             <string/>
+            </property>
+            <property name="accessibleDescription">
+             <string/>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(211, 215, 207);</string>
+            </property>
+            <layout class="QGridLayout" name="m_gridLayoutMap"/>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="m_widStatusBox" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(114, 159, 207);</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_8">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_8">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_2">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_4">
+                   <item>
+                    <widget class="QLabel" name="label_7">
+                     <property name="text">
+                      <string>Degrees</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_8">
+                     <property name="text">
+                      <string>DMS</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label">
+                     <property name="text">
+                      <string>Distance</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_3">
+                   <item>
+                    <widget class="QLineEdit" name="m_leDegrees"/>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="m_leDMS"/>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="m_ledistance"/>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_7">
+                   <item>
+                    <widget class="QLabel" name="label_5">
+                     <property name="text">
+                      <string>Utm</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_6">
+                     <property name="text">
+                      <string>Usng</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_9">
+                     <property name="text">
+                      <string>Test</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_5">
+                   <item>
+                    <widget class="QLineEdit" name="m_leUtm"/>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="m_leUsng"/>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="test"/>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1262</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Map">
+    <property name="title">
+     <string>&amp;Map</string>
+    </property>
+    <widget class="QMenu" name="menu_Mode">
+     <property name="title">
+      <string>&amp;Mode</string>
+     </property>
+     <addaction name="actionMoving_Platform"/>
+     <addaction name="actionMoving_Map"/>
+     <addaction name="action_Pan_Map"/>
+    </widget>
+    <widget class="QMenu" name="menu_Platform_Path">
+     <property name="title">
+      <string>&amp;Platform Path</string>
+     </property>
+     <addaction name="actionShow_Full_Path"/>
+     <addaction name="actionShow_Latest_Path"/>
+     <addaction name="action_Hide_Path"/>
+    </widget>
+    <widget class="QMenu" name="menu_Zoom">
+     <property name="title">
+      <string>&amp;Zoom</string>
+     </property>
+     <addaction name="Zoom_In"/>
+     <addaction name="Zoom_Out"/>
+     <addaction name="action_Reset"/>
+    </widget>
+    <widget class="QMenu" name="menu_Annotations">
+     <property name="title">
+      <string>&amp;Annotations</string>
+     </property>
+     <addaction name="actionAdd_Annotations"/>
+     <addaction name="action_Show_All"/>
+     <addaction name="action_Hide_All"/>
+     <addaction name="action_Manage"/>
+    </widget>
+    <widget class="QMenu" name="menu_Way_Points">
+     <property name="title">
+      <string>&amp;Way Points</string>
+     </property>
+     <addaction name="actionAdd_Waypoints"/>
+     <addaction name="action_Show_All_2"/>
+     <addaction name="action_Hide_All_2"/>
+     <addaction name="action_Manage_2"/>
+    </widget>
+    <widget class="QMenu" name="menuFind_Distance_Bearing">
+     <property name="title">
+      <string>Find &amp;Distance &amp;&amp; &amp;Bearing</string>
+     </property>
+     <widget class="QMenu" name="menuUsing_Mouse">
+      <property name="title">
+       <string>Using &amp;Mouse</string>
+      </property>
+      <addaction name="actionBetween_Two_Points"/>
+      <addaction name="actionBetween_Platform_Point"/>
+     </widget>
+     <addaction name="menuUsing_Mouse"/>
+     <addaction name="action_Manual_Entry"/>
+     <addaction name="action_Remove_Line"/>
+    </widget>
+    <addaction name="action_Load_Maps"/>
+    <addaction name="menu_Mode"/>
+    <addaction name="menu_Platform_Path"/>
+    <addaction name="menu_Zoom"/>
+    <addaction name="menu_Annotations"/>
+    <addaction name="menu_Way_Points"/>
+    <addaction name="menuFind_Distance_Bearing"/>
+    <addaction name="actionReset_to_Default"/>
+   </widget>
+   <addaction name="menu_Map"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Load_Maps">
+   <property name="text">
+    <string>&amp;Load Maps</string>
+   </property>
+   <property name="toolTip">
+    <string>Click to load available maps</string>
+   </property>
+   <property name="statusTip">
+    <string>Click to load available maps</string>
+   </property>
+  </action>
+  <action name="actionMoving_Platform">
+   <property name="text">
+    <string>Moving &amp;Platform</string>
+   </property>
+  </action>
+  <action name="actionMoving_Map">
+   <property name="text">
+    <string>Moving &amp;Map</string>
+   </property>
+  </action>
+  <action name="action_Pan_Map">
+   <property name="text">
+    <string>&amp;Pan Mode</string>
+   </property>
+  </action>
+  <action name="actionShow_Full_Path">
+   <property name="text">
+    <string>Show &amp;Full Path</string>
+   </property>
+  </action>
+  <action name="actionShow_Latest_Path">
+   <property name="text">
+    <string>Show &amp;Latest Path</string>
+   </property>
+  </action>
+  <action name="action_Hide_Path">
+   <property name="text">
+    <string>&amp;Hide Path</string>
+   </property>
+  </action>
+  <action name="Zoom_In">
+   <property name="text">
+    <string>&amp;In</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl++</string>
+   </property>
+  </action>
+  <action name="Zoom_Out">
+   <property name="text">
+    <string>&amp;Out</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+-</string>
+   </property>
+  </action>
+  <action name="action_Reset">
+   <property name="text">
+    <string>&amp;Reset</string>
+   </property>
+  </action>
+  <action name="actionAdd_Annotations">
+   <property name="text">
+    <string>Add &amp;Annotations</string>
+   </property>
+  </action>
+  <action name="action_Show_All">
+   <property name="text">
+    <string>&amp;Show All</string>
+   </property>
+  </action>
+  <action name="action_Hide_All">
+   <property name="text">
+    <string>&amp;Hide All</string>
+   </property>
+  </action>
+  <action name="action_Manage">
+   <property name="text">
+    <string>&amp;Manage</string>
+   </property>
+  </action>
+  <action name="actionAdd_Waypoints">
+   <property name="text">
+    <string>Add &amp;Waypoints</string>
+   </property>
+  </action>
+  <action name="action_Show_All_2">
+   <property name="text">
+    <string>&amp;Show All</string>
+   </property>
+  </action>
+  <action name="action_Hide_All_2">
+   <property name="text">
+    <string>&amp;Hide All</string>
+   </property>
+  </action>
+  <action name="action_Manage_2">
+   <property name="text">
+    <string>&amp;Manage</string>
+   </property>
+  </action>
+  <action name="actionBetween_Two_Points">
+   <property name="text">
+    <string>Between &amp;Two Points</string>
+   </property>
+  </action>
+  <action name="actionBetween_Platform_Point">
+   <property name="text">
+    <string>Between &amp;Platform &amp;&amp; &amp;Point</string>
+   </property>
+  </action>
+  <action name="action_Manual_Entry">
+   <property name="text">
+    <string>&amp;Manual Entry</string>
+   </property>
+  </action>
+  <action name="action_Remove_Line">
+   <property name="text">
+    <string>&amp;Remove Line</string>
+   </property>
+  </action>
+  <action name="actionReset_to_Default">
+   <property name="text">
+    <string>Reset to Default</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

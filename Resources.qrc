@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/res">
+        <file>RedShinyPin.png</file>
+        <file>pinB.png</file>
+        <file>pinA.png</file>
+        <file>pin_circle_red.png</file>
+        <file>Navigation.png</file>
+        <file>line-32.png</file>
+        <file>minus-16-f.png</file>
+        <file>plus-16-f.png</file>
+        <file>point-32.png</file>
+        <file>screenshot.png</file>
+        <file>undo-32.png</file>
+        <file>ic_menu_legendpopover_light.png</file>
+        <file>orange_symbol.png</file>
+    </qresource>
+</RCC>
